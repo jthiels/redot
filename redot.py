@@ -2,7 +2,7 @@ import os
 import subprocess32 as sp
 
 user = raw_input("Please input user name whose dotfiles you would like to update or replace:")
-userfile = "/home/user/"
+userfile = "/home/" + user
 # get list of skeleton files; ignore file in subdir but include directory
 dotfilelist = []
 for root,dir,files in os.walk("/usr/arcts/systems/skel"):
