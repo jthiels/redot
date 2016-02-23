@@ -1,6 +1,6 @@
 import os
 import subprocess32 as sp
-
+print "Please ensure that the user's /home quota is NOT full before you begin."
 user = raw_input("Please input user name whose dotfiles you would like to update or replace:")
 userfile = "/home/" + user
 # get list of skeleton files; ignore file in subdir but include directory
